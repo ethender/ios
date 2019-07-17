@@ -1,0 +1,33 @@
+//
+//  Card.swift
+//  Concentration2
+//
+//  Created by BA on 17/07/19.
+//  Copyright © 2019 ethender . All rights reserved.
+//
+
+import Foundation
+
+/*
+ Diff bw classes and structs
+ 1. structs no inheritance
+ 2. structs are value type and classes are reference types
+ :In values are copied in structs.
+ :But classes are references. if modified everywhere changes
+ */
+struct Card{
+    
+    var isFaceUp = false
+    var isMatched = false
+    var identified: Int
+    
+    static var identifierFactory = 0
+    init() {
+        self.identified = Card.getUniqueIdentifier()
+    }
+    
+    static func getUniqueIdentifier()-> Int{
+        Card.identifierFactory += 1
+        return identifierFactory
+    }
+}

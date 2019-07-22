@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01445ABA22DEFA90006D2FE9 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01445AB922DEFA90006D2FE9 /* Concentration.swift */; };
+		01445ABC22DEFB52006D2FE9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01445ABB22DEFB52006D2FE9 /* Card.swift */; };
 		279529F322D0D23A00D26D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279529F222D0D23A00D26D06 /* AppDelegate.swift */; };
 		279529F522D0D23A00D26D06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279529F422D0D23A00D26D06 /* ViewController.swift */; };
 		279529F822D0D23A00D26D06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279529F622D0D23A00D26D06 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01445AB922DEFA90006D2FE9 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		01445ABB22DEFB52006D2FE9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		279529EF22D0D23A00D26D06 /* Concentration2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279529F222D0D23A00D26D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279529F422D0D23A00D26D06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				279529F622D0D23A00D26D06 /* Main.storyboard */,
 				27952A0122D0D23D00D26D06 /* Info.plist */,
 				279529F922D0D23A00D26D06 /* Concentration2.xcdatamodeld */,
+				01445AB922DEFA90006D2FE9 /* Concentration.swift */,
+				01445ABB22DEFB52006D2FE9 /* Card.swift */,
 			);
 			path = Concentration2;
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				279529F522D0D23A00D26D06 /* ViewController.swift in Sources */,
+				01445ABA22DEFA90006D2FE9 /* Concentration.swift in Sources */,
+				01445ABC22DEFB52006D2FE9 /* Card.swift in Sources */,
 				279529FB22D0D23A00D26D06 /* Concentration2.xcdatamodeld in Sources */,
 				279529F322D0D23A00D26D06 /* AppDelegate.swift in Sources */,
 			);

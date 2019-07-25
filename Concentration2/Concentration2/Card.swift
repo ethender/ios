@@ -15,11 +15,19 @@ import Foundation
  :In values are copied in structs.
  :But classes are references. if modified everywhere changes
  */
-struct Card{
+struct Card: Hashable{
+    
+    
+    var hashValue: Int {return identified}
+    static func == (lhs: Card, rhs: Card) -> Bool {
+        return lhs.identified == rhs.identified
+    }
+    
+   
     
     var isFaceUp = false
     var isMatched = false
-    var identified: Int
+    private var identified: Int
     
     private static var identifierFactory = 0
     init() {

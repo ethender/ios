@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,27 +15,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayingCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="iuc-7G-Wjw" customClass="PlayingCardView" customModule="PlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="16" y="27" width="343" height="620"/>
+                                <rect key="frame" x="16" y="136.66666666666669" width="343" height="548.66666666666652"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iuc-7G-Wjw" secondAttribute="height" multiplier="5:8" id="4kr-c3-uBM"/>
+                                    <constraint firstAttribute="width" priority="750" constant="800" id="not-1n-USs"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iuc-7G-Wjw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="10Z-pO-4wb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iuc-7G-Wjw" secondAttribute="trailing" constant="16" id="3aF-o2-AhX"/>
-                            <constraint firstItem="iuc-7G-Wjw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="jfj-wo-i65"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iuc-7G-Wjw" secondAttribute="bottom" constant="20" id="sNl-fj-RGZ"/>
+                            <constraint firstItem="iuc-7G-Wjw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="10Z-pO-4wb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iuc-7G-Wjw" secondAttribute="trailing" constant="16" id="3aF-o2-AhX"/>
+                            <constraint firstItem="iuc-7G-Wjw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FvB-ui-B6Z"/>
+                            <constraint firstItem="iuc-7G-Wjw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="PWd-tK-sv8"/>
+                            <constraint firstItem="iuc-7G-Wjw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="jfj-wo-i65"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iuc-7G-Wjw" secondAttribute="bottom" constant="16" id="sNl-fj-RGZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="128.18590704647679"/>
+            <point key="canvasLocation" x="-948" y="76.911544227886068"/>
         </scene>
     </scenes>
 </document>

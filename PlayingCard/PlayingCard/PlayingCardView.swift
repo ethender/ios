@@ -44,6 +44,14 @@ class PlayingCardView: UIView {
         label.sizeToFit()
         label.isHidden = !isFaceUp
     }
+    // this is called UI bounds changed and accessibility changed
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        setNeedsDisplay()
+        setNeedsLayout()
+    }
+    
+    
+    // Add ing sub layouts
     override func layoutSubviews() {
         super.layoutSubviews()
         configureCornerLabel(upperLeftCornerLabel)
@@ -57,6 +65,8 @@ class PlayingCardView: UIView {
         .offsetBy(dx: -lowerRightCornerLabel.frame.size.width, dy: -lowerRightCornerLabel.frame.size.height	)
     }
    
+    
+    //drawing sub views
     override func draw(_ rect: CGRect) {
     /*    if let context = UIGraphicsGetCurrentContext(){
             context.addArc(center: CGPoint(x: bounds.midX, y: bounds.midY), radius: 100.0, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
@@ -87,8 +97,7 @@ class PlayingCardView: UIView {
 }
 extension PlayingCardView{
     private struct SizeRatio{
-        //static let cornerFontSizeToBoundsHeight: CGFloat = 0.005
-        static let cornerFontSizeToBoundsHeight: CGFloat = 0.05
+        static let cornerFontSizeToBoundsHeight: CGFloat = 0.085
         static let cornerRadiusToBoundsheight: CGFloat = 0.06
         static let cornerOffsetToCornerRadius: CGFloat = 0.33
         static let faceCardImageSizeToBoundsSize: CGFloat = 0.75

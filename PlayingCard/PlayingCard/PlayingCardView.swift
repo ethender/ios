@@ -40,7 +40,7 @@ class PlayingCardView: UIView {
     
     private func configureCornerLabel(_ label: UILabel){
         label.attributedText = cornerString
-        //label.frame.size = CGSize.zero
+        //	label.frame.size = CGSize.zero
         label.sizeToFit()
         label.isHidden = !isFaceUp
     }
@@ -87,7 +87,8 @@ class PlayingCardView: UIView {
 }
 extension PlayingCardView{
     private struct SizeRatio{
-        static let cornerFontSizeToBoundsHeight: CGFloat = 0.005
+        //static let cornerFontSizeToBoundsHeight: CGFloat = 0.005
+        static let cornerFontSizeToBoundsHeight: CGFloat = 0.05
         static let cornerRadiusToBoundsheight: CGFloat = 0.06
         static let cornerOffsetToCornerRadius: CGFloat = 0.33
         static let faceCardImageSizeToBoundsSize: CGFloat = 0.75
